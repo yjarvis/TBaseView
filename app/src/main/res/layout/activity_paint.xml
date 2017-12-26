@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/title_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/paintView_btn0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="线性渲染" />
+
+            <Button
+                android:id="@+id/paintView_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="环形渲染" />
+
+            <Button
+                android:id="@+id/paintView_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫描渲染" />
+
+            <Button
+                android:id="@+id/paintView_btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图片渲染" />
+
+            <Button
+                android:id="@+id/paintView_btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="组合渲染" />
+
+            <Button
+                android:id="@+id/paintView_btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="倒影效果" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.jarvis.tbaseview.customview.PaintView
+        android:id="@id/custom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</LinearLayout>

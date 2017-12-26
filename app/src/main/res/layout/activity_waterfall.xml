@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <com.jarvis.tbaseviewlib.view.mullayout.TLazyScrollView
+        android:id="@+id/waterfall_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.jarvis.tbaseviewlib.view.mullayout.TWaterFallView
+            android:id="@+id/waterfall_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal" />
+    </com.jarvis.tbaseviewlib.view.mullayout.TLazyScrollView>
+
+</LinearLayout>

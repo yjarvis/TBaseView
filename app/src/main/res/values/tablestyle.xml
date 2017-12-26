@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <declare-styleable name="TableView_Style">
+        <attr name="table_icon" format="reference" />
+        <attr name="table_text" format="string" />
+        <attr name="table_text_size" format="integer" />
+        <attr name="table_text_color" format="color" />
+        <attr name="table_change_color" format="color" />
+    </declare-styleable>
+
+</resources>

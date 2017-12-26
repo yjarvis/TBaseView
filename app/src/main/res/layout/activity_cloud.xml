@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/title_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换模式时，需要退出当前界面重新选择" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cloud_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="竖向" />
+
+        <Button
+            android:id="@+id/cloud_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="横向" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cloud_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纯文字" />
+
+        <Button
+            android:id="@+id/cloud_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纯图片" />
+
+        <Button
+            android:id="@+id/cloud_text_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文字+图片" />
+    </LinearLayout>
+
+    <com.jarvis.tbaseviewlib.view.floatlayout.TCloudLayout
+        android:id="@+id/cloud_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bluelight" />
+
+</LinearLayout>

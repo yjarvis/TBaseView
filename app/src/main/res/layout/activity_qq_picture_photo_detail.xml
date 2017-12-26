@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <GridView
+        android:id="@+id/qqPic_photodetail_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_fragment_content"
+        android:layout_marginBottom="51dp"
+        android:cacheColorHint="@color/transparent"
+        android:horizontalSpacing="@dimen/padding_5"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:listSelector="@color/transparent"
+        android:numColumns="3"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/padding_5" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/qqPic_photodetail_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/padding_10"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:paddingTop="@dimen/padding_10"
+            android:text="预览"
+            android:textColor="@color/bluelight" />
+
+        <TextView
+            android:id="@+id/qqPic_photodetail_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_15"
+            android:background="@drawable/blue_select_bg"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:paddingTop="@dimen/padding_5"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray" />
+</RelativeLayout>

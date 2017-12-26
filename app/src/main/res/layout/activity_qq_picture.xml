@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:focusable="true"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/title_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_15"
+        android:paddingLeft="@dimen/padding_20"
+        android:paddingRight="@dimen/padding_20"
+        android:paddingTop="@dimen/padding_15" >
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="top|left"
+            android:hint="说点什么吧..."
+            android:maxLines="4"
+            android:minHeight="70dp" />
+
+        <GridView
+            android:id="@+id/qqPic_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:numColumns="4"
+            android:horizontalSpacing="@dimen/padding_10"
+            android:verticalSpacing="@dimen/padding_10" />
+    </LinearLayout>
+
+</LinearLayout>

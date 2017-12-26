@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TBaseView</string>
+    <string name="action_settings">Settings</string>
+    <string name="toast_exit">再按一次退出程序</string>
+    <string name="toast_bitmapView_save">文件保存在：</string>
+
+    <string-array name="main_listview_strs">
+        <item>简单的自定义控件#学习自定义控件的基础</item>
+        <item>贝塞尔曲线控件#使控件进行贝塞尔曲线动画</item>
+        <item>图片美颜控件#使用ColorFilter实现美颜功能（负片、怀旧、秋色效果）</item>
+        <item>Paint的渲染用法#渲染Shader实现倒影效果</item>
+        <item>旋转木马3D+倒影效果#自定义View进阶</item>
+        <item>标签云效果#自定义View进阶</item>
+        <item>高斯模糊效果#高斯模糊算法</item>
+        <item>瀑布流效果#瀑布流</item>
+        <item>ListView滑动删除#学习使用ListView</item>
+        <item>GridView滑动删除#学习使用GridView</item>
+        <item>仿QQ空间说说选择图片#学习使用GridView</item>
+        <item>Fresco图片加载库#使用Facebook的图片加载库进行图片加载</item>
+        <item>RecyclerView控件的使用#5.0RecyclerView控件的初步使用</item>
+        <item>断点下载#断点下载</item>
+        <item>横向无限循环滑动+回弹效果#常用于用户推荐、更多商品等模块的横向滑动</item>
+        <item>自定义日历控件#自定义日历控件，可签到</item>
+        <item>仿淘宝商品详情滚动翻页#双滚的实现</item>
+        <item>插件式开发#实现一键换肤功能</item>
+        <item>仿微信导航栏切换淡入淡出#实现导航切换淡入淡出</item>
+        <item>上下/左右滚动的跑马灯效果#跑马灯效果</item>
+        <item>拖动添加效果#拖动效果</item>
+        <item>人脸识别#FaceDetecor API实现人脸识别</item>
+        <item>21种设计模式#一点一点带你学习21种设计模式</item>
+        <item>Glide图片加载库#二次封装Glide库</item>
+        <item>获取手机的倾斜度#传感器Sensor的使用</item>
+        <item>监听手机短信#监听并发送手机短信内容</item>
+        <item>模拟定位#模拟定位，篡改定位信息</item>
+        <item>Jni的使用#ndk开发so库</item>
+        <item>贴纸功能#贴纸放大，缩小，移动，旋转</item>
+    </string-array>
+
+    <string-array name="design_title_strs">
+        <item>策略模式#定义算法族，分别封装起来，让他们可以相互替换</item>
+        <item>观察者模式#在对象之间定义一对多的依赖，这样依赖，当一个对象改变状态，依赖他的对象都会收到通知</item>
+
+
+    </string-array>
+
+    <string name="test_text">感谢支持TBaseView,您的支持是我最大的动力</string>
+    <string name="info">白色的风车,
+安静的转着.
+真实的感觉,
+梦境般遥远.
+甜甜的海水,
+复杂的眼泪.
+看你傻笑着,
+握住我的手,
+梦希望没有尽头, 
+我们走到这就好, 
+因为我不想太快走完这幸福,
+很可惜没有祝福,
+但爱你并不孤独, 
+不会再让你哭.
+我背你走到最后, 
+能不能不要回头,
+你紧紧地抱住我,
+说你不需要承诺,
+你说我若一个人会比较自由,
+我不懂你说什么,
+反正不会松手.
+我背你走到最后, 
+能不能别想太多,
+会不会手牵着手,
+晚一点才再到尽头. 
+你说不该再相见只为了瞬间,
+谢谢你让我听见,
+因为我在等待永远. </string>
+
+
+</resources>

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/title_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <com.jarvis.tbaseview.customview.ScrollTextView
+        android:id="@+id/switcher1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginTop="62dp"
+        android:background="#679077"
+        android:orientation="vertical" />
+
+    <com.jarvis.tbaseview.customview.ScrollTextView
+        android:id="@+id/switcher2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginTop="62dp"
+        android:background="#679077"
+        android:orientation="horizontal" />
+
+</LinearLayout>

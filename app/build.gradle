@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.jarvis.tbaseview"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+        ndk {
+            // 模块名称
+            moduleName = "ndk_tbaseview_test"
+            // 指定编译平台，更多平台信息 参见https://developer.android.com/ndk/guides/abis.html#sa
+            abiFilters "armeabi", "armeabi-v7a"
+        }
+    }
+
+//    externalNativeBuild {
+//        ndkBuild {
+//            path 'src/main/jni/Android.mk'
+//        }
+//    }
+
+    //签名配置
+    signingConfigs {
+        debugConfig {
+            keyAlias "tbaseview"
+            keyPassword "720caocao"
+            storeFile file("../keystore/tbaseview.jks")
+            storePassword "720caocao"
+        }
+        releaseConfig {
+            keyAlias "tbaseview"
+            keyPassword "720caocao"
+            storeFile file("../keystore/tbaseview.jks")
+            storePassword "720caocao"
+        }
+    }
+
+    buildTypes {
+        debug {
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled false
+            //移除无用的resource文件
+            shrinkResources false
+            signingConfig signingConfigs.debugConfig
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled false
+            //移除无用的resource文件
+            shrinkResources false
+            signingConfig signingConfigs.releaseConfig
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //配置SO文件
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+//
+//    sourceSets.main {
+//        // 你的源码目录
+//        jni.srcDir 'src/main/jni'
+//    }
+
+
+//    //渠道Flavors
+//    productFlavors {
+//        xiaomi_android{}
+////        yingyongbao_android{}
+//    }
+//    //批量配置
+//    productFlavors.all { flavor ->
+//        flavor.manifestPlaceholders = [TD_CHANNEL_VALUE: name]
+//    }
+//
+//
+//    applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def outputFile = output.outputFile
+//            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+////                def fileName = outputFile.name.replace(".apk", "-${defaultConfig.versionName}.apk")
+//                def fileName = "raincredit_v${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+//                output.outputFile = new File(outputFile.parent, fileName)
+//            }
+//        }
+//    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':TBaseViewLib')
+    compile 'com.facebook.fresco:fresco:0.11.0'
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/libamnixskinsmooth.jar')
+}

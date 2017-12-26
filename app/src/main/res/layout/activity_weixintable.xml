@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/title_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+    
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/weixintable_viewpager"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        />
+
+   <LinearLayout 
+       android:id="@+id/table_table_layout"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:orientation="horizontal"
+       >
+       <com.jarvis.tbaseview.customview.TFadeTableView
+           android:id="@+id/table_table1"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           toolbar:table_icon="@drawable/a3r"
+           toolbar:table_text="微信"
+           toolbar:table_change_color="#4CDB2F"
+           />
+       <com.jarvis.tbaseview.customview.TFadeTableView
+           android:id="@+id/table_table2"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           toolbar:table_icon="@drawable/a4n"
+           toolbar:table_text="通讯录"
+           toolbar:table_change_color="#4CDB2F"
+           />
+       <com.jarvis.tbaseview.customview.TFadeTableView
+           android:id="@+id/table_table3"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           toolbar:table_icon="@drawable/a3v"
+           toolbar:table_text="发现"
+           toolbar:table_change_color="#4CDB2F"
+           />
+       <com.jarvis.tbaseview.customview.TFadeTableView
+           android:id="@+id/table_table4"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           toolbar:table_icon="@drawable/a3t"
+           toolbar:table_text="我"
+           toolbar:table_change_color="#4CDB2F"
+           />
+       
+   </LinearLayout>
+
+</LinearLayout>
